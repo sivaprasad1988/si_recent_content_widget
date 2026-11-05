@@ -57,6 +57,9 @@ final class ExtensionConfigurationTest extends TestCase
 
         self::assertSame('Maintainer', $roles['Siva'] ?? null);
         self::assertSame('Original author', $roles['Epixskill'] ?? null);
+
+        $epixskill = array_values(array_filter(self::composerJson()['authors'], static fn(array $author): bool => $author['name'] === 'Epixskill'))[0];
+        self::assertArrayNotHasKey('email', $epixskill, 'Support requests go to the maintainer, not the original author');
     }
 
     #[Test]

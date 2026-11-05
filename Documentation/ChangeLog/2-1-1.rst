@@ -1,0 +1,10 @@
+==========================
+Version 2.1.1 - 2026/11/05
+==========================
+
+Changes
+=======
+
+*   The email address of the original author Epixskill is removed from
+    `composer.json`, so support requests go to the maintainer. Epixskill is
+    still credited as original author.

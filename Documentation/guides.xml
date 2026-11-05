@@ -12,7 +12,7 @@
                interlink-shortcode="woit/si-recent-content-widget"
                typo3-core-preferred="stable"/>
     <project title="Recent Content Widget"
-             release="2.1.0"
+             release="2.1.1"
              version="2.1"
              copyright="since 2021 by Epixskill, maintained since 2026 by Siva"/>
 </guides>
