@@ -1,0 +1,59 @@
+{
+  "name": "woit/si-recent-content-widget",
+  "type": "typo3-cms-extension",
+  "description": "A widget for the dashboard to display new and recently updated content elements.",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/sivaprasad1988/si_recent_content_widget",
+  "support": {
+    "issues": "https://github.com/sivaprasad1988/si_recent_content_widget/issues",
+    "source": "https://github.com/sivaprasad1988/si_recent_content_widget"
+  },
+  "require": {
+    "php": "^8.2",
+    "typo3/cms-backend": "^13.4 || ^14.0",
+    "typo3/cms-core": "^13.4 || ^14.0",
+    "typo3/cms-dashboard": "^13.4 || ^14.0",
+    "typo3/cms-fluid": "^13.4 || ^14.0"
+  },
+  "authors": [
+    {
+      "name": "Siva",
+      "email": "sivaprasad.s88@gmail.com",
+      "role": "Maintainer"
+    },
+    {
+      "name": "Epixskill",
+      "email": "typo3@epixskill.de",
+      "role": "Original author"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Woit\\SiRecentContentWidget\\": "Classes/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "typo3/class-alias-loader": true,
+      "typo3/cms-composer-installers": true
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "si_recent_content_widget",
+      "web-dir": ".Build/public"
+    }
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.1",
+    "phpunit/phpunit": "^11.5"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Woit\\SiRecentContentWidget\\Tests\\": "Tests/"
+    }
+  },
+  "scripts": {
+    "test:unit": "phpunit -c Build/phpunit/UnitTests.xml"
+  }
+}

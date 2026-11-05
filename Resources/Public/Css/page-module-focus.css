@@ -1,0 +1,19 @@
+/* Highlight for the content element opened from the Recent Content widget. */
+.t3-page-ce.recent-content-widget-focus {
+    border-radius: 4px;
+    animation: recent-content-widget-focus 2.5s ease-out;
+}
+
+.t3-page-ce.recent-content-widget-focus:focus {
+    outline: none;
+}
+
+@keyframes recent-content-widget-focus {
+    0%,
+    60% {
+        box-shadow: 0 0 0 3px var(--typo3-state-primary-border-color, #0078e6);
+    }
+    100% {
+        box-shadow: 0 0 0 3px transparent;
+    }
+}

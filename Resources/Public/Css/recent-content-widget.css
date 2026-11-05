@@ -1,0 +1,41 @@
+.o-recentcontentwidget .o-recentcontentwidget__element {
+    margin-top: 2rem;
+}
+
+.o-recentcontentwidget .o-recentcontentwidget__element:first-child {
+    margin-top: 0;
+}
+
+.o-recentcontentwidget .c-title {
+    margin-right: 0.5rem;
+}
+
+.o-recentcontentwidget .c-badge {
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0.25rem 0.5rem;
+    line-height: 0.875em;
+    font-size: 0.875em;
+    border-radius: 0.25em;
+    display: inline-block;
+    margin-right: 0.25rem;
+}
+.o-recentcontentwidget .c-badge--green {
+    background: #7aa41c;
+}
+.o-recentcontentwidget .c-badge--red {
+    background: #de4545;
+}
+.o-recentcontentwidget .c-badge--yellow {
+    background: #dea645;
+}
+
+.o-recentcontentwidget .u-space-top .btn {
+    margin-right: 4px;
+}
+
+.o-recentcontentwidget .u-space-top {
+    margin-top: 0.25rem;
+}

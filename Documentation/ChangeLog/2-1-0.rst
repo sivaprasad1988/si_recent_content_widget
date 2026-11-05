@@ -1,0 +1,29 @@
+==========================
+Version 2.1.0 - 2026/11/05
+==========================
+
+This release adds support for TYPO3 v13.4 again. One code base runs on
+TYPO3 v13.4 and v14.
+
+The extension was created by Epixskill and is no longer maintained there.
+Siva continues it under a new name. Thanks to Epixskill for the original work.
+
+Breaking changes
+================
+
+*   Composer package renamed: `epixskill/recent-content-widget` ->
+    `woit/si-recent-content-widget`.
+*   Extension key renamed: `recent_content_widget` -> `si_recent_content_widget`.
+*   PHP namespace renamed: `Epixskill\RecentContentWidget` ->
+    `Woit\SiRecentContentWidget`.
+*   JavaScript import map prefix renamed: `@epixskill/recent-content-widget/` ->
+    `@woit/si-recent-content-widget/`.
+
+Changes
+=======
+
+*   Requires TYPO3 13.4 or 14 and PHP 8.2 or higher.
+*   The widget implements `WidgetInterface` and `RequestAwareWidgetInterface`
+    instead of the v14-only `WidgetRendererInterface`. Both interfaces exist in
+    TYPO3 v13 and v14.
+*   The option `refreshAvailable` defaults to `true`.

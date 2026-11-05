@@ -1,0 +1,38 @@
+==========================
+Version 2.0.0 - 2026/09/30
+==========================
+
+This release adds support for TYPO3 v14. Support for TYPO3 v10, v11 and v12
+is dropped.
+
+Breaking changes
+================
+
+*   Requires TYPO3 14 and PHP 8.2 or higher.
+*   The widget moved from the group :guilabel:`System Information` to the
+    group :guilabel:`Content`.
+*   The service `dashboard.views.epixskill.recent_content_widget` and the class
+    `Epixskill\RecentContentWidget\Views\Factory` are removed. The widget
+    renders its template with the `BackendViewFactory`.
+
+Features
+========
+
+*   :guilabel:`Show page in backend` opens the page in the language of the
+    content element, scrolls to the content element, focuses it and
+    highlights it.
+
+Bugfixes
+========
+
+*   The widget uses the TYPO3 v14 widget API (`WidgetRendererInterface`).
+*   Database queries use `executeQuery()` and `fetchAllAssociative()`.
+*   Content elements on hidden pages and elements restricted to frontend user
+    groups are listed again.
+*   Workspace versions are no longer listed.
+*   The content element type label is read from TCA. The new content element
+    wizard no longer provides it via page TSconfig.
+*   The :guilabel:`Edit` button checks the table permission, the page
+    permission :guilabel:`Edit content` and the record permissions.
+*   The widget title is no longer shown twice.
+*   Buttons use the TYPO3 backend button styles.

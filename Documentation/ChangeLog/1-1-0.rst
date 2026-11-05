@@ -1,0 +1,24 @@
+==========================
+Version 1.1.0 - 2021/10/05
+==========================
+
+This release is a feature release. It introduces support for TYPO3 v11 LTS and PHP 8.0.
+
+Download
+========
+
+Download this version from the `TYPO3 extension repository <https://extensions.typo3.org/extension/recent_content_widget/>`__ or from
+`GitHub <https://github.com/Epixskill/recent-content-widget/releases/tag/1.1.0>`__.
+
+All Changes
+===========
+
+This is a list of all changes in this release::
+
+   2021-10-05 [TASK] Raise dependency versions for TYPO3 11.5 support (857efd0 Niklas Grieger)
+   2021-09-22 [TASK] Add captions for images in introduction documentation (29032ea Niklas Grieger)
+   2021-09-22 [TASK] Raise version in ext_emconf.php to 1.0.1-dev (5c0f134 Niklas Grieger)
+   2021-09-21 [BUGFIX] Get CType title from newContentElement wizard instead from TCA columns CType (74b7b80 Niklas Grieger)
+   2021-09-21 [BUGFIX] Fix order in constructor for PHP 8.0 (b0a67af Niklas Grieger)
+   2021-09-21 [BUGFIX] Fix typo in documentation (084910f Niklas Grieger)
+   2021-09-09 [BUGFIX] Fix typo in documentation (7eb1879 Niklas Grieger)

@@ -1,0 +1,24 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Woit\SiRecentContentWidget\:
+    resource: '../Classes/*'
+
+  dashboard.widget.woit.si_recent_content_widget.recentContent:
+    class: 'Woit\SiRecentContentWidget\Widgets\RecentContentWidget'
+    arguments:
+      $options:
+        limit: 5
+        refreshAvailable: true
+    tags:
+      - name: dashboard.widget
+        identifier: 'recentContent'
+        groupNames: 'content'
+        title: 'LLL:EXT:si_recent_content_widget/Resources/Private/Language/locallang.xlf:widgets.recentContent.title'
+        description: 'LLL:EXT:si_recent_content_widget/Resources/Private/Language/locallang.xlf:widgets.recentContent.description'
+        iconIdentifier: 'content-widget-text'
+        height: 'large'
+        width: 'medium'

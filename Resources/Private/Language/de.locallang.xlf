@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" datatype="plaintext" original="messages" date="2021-08-31T22:26:21Z" product-name="si_recent_content_widget">
+		<header/>
+		<body>
+			<trans-unit id="widgets.recentContent.title" xml:space="preserve">
+				<target>Letzte Inhalte</target>
+			</trans-unit>
+			<trans-unit id="widgets.recentContent.description" xml:space="preserve">
+				<target>Zeigt eine Liste der kürzlich geänderten oder erstellten Inhaltselemente.</target>
+			</trans-unit>
+			<trans-unit id="widgets.recentContent.fallbackTitle" xml:space="preserve">
+				<target>[Unbenannt]</target>
+			</trans-unit>
+			<trans-unit id="widgets.recentContent.badge.new" xml:space="preserve">
+				<target>Neu</target>
+			</trans-unit>
+			<trans-unit id="widgets.recentContent.badge.hidden" xml:space="preserve">
+				<target>Verborgen</target>
+			</trans-unit>
+			<trans-unit id="widgets.recentContent.badge.visibleInPast" xml:space="preserve">
+				<target>War sichtbar in Vergangenheit</target>
+			</trans-unit>
+			<trans-unit id="widgets.recentContent.badge.visibleInFuture" xml:space="preserve">
+				<target>Zukünftig sichtbar</target>
+			</trans-unit>
+			<trans-unit id="widgets.recentContent.dateFormat" xml:space="preserve">
+				<target>d.m.Y - H:i:s</target>
+			</trans-unit>
+			<trans-unit id="widgets.recentContent.contentId" xml:space="preserve">
+				<target>Content-ID:</target>
+			</trans-unit>
+			<trans-unit id="widgets.recentContent.pageId" xml:space="preserve">
+				<target>Seiten-ID:</target>
+			</trans-unit>
+			<trans-unit id="widgets.recentContent.showPageBackend" xml:space="preserve">
+				<target>Seite im Backend anzeigen</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

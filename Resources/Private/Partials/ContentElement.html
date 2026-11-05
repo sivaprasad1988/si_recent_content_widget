@@ -1,0 +1,56 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers"
+      xmlns:core="http://typo3.org/ns/TYPO3/CMS/Core/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<div class="o-recentcontentwidget__element">
+    <f:spaceless>
+        <div>
+            <strong class="c-title">
+                <f:if condition="{element.header}">
+                    <f:then>{element.header}</f:then>
+                    <f:else><f:translate key="LLL:EXT:si_recent_content_widget/Resources/Private/Language/locallang.xlf:widgets.recentContent.fallbackTitle" /></f:else>
+                </f:if>
+            </strong>
+            <f:if condition="{element.badges.new}">
+            <span class="c-badge c-badge--green">
+                <f:translate key="LLL:EXT:si_recent_content_widget/Resources/Private/Language/locallang.xlf:widgets.recentContent.badge.new" />
+            </span>
+            </f:if>
+            <f:if condition="{element.hidden}">
+            <span class="c-badge c-badge--red">
+                <f:translate key="LLL:EXT:si_recent_content_widget/Resources/Private/Language/locallang.xlf:widgets.recentContent.badge.hidden" />
+            </span>
+            </f:if>
+            <f:if condition="{element.badges.visibleInFuture}">
+            <span class="c-badge c-badge--yellow">
+                <f:translate key="LLL:EXT:si_recent_content_widget/Resources/Private/Language/locallang.xlf:widgets.recentContent.badge.visibleInFuture" />
+            </span>
+            </f:if>
+            <f:if condition="{element.badges.visibleInPast}">
+            <span class="c-badge c-badge--yellow">
+                <f:translate key="LLL:EXT:si_recent_content_widget/Resources/Private/Language/locallang.xlf:widgets.recentContent.badge.visibleInPast" />
+            </span>
+            </f:if>
+        </div>
+        <div>
+            <span><f:translate key="LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.type" />:&nbsp;{element.typeLabel}</span>
+            <span> | </span>
+            <span><f:translate key="LLL:EXT:si_recent_content_widget/Resources/Private/Language/locallang.xlf:widgets.recentContent.contentId" />&nbsp;{element.uid}</span>
+            <span> | </span>
+            <span><f:translate key="LLL:EXT:si_recent_content_widget/Resources/Private/Language/locallang.xlf:widgets.recentContent.pageId" />&nbsp;{element.pid}</span>
+            <br>
+            <span><f:translate key="LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.timestamp" />:&nbsp;<f:format.date format="{f:translate(key: 'LLL:EXT:si_recent_content_widget/Resources/Private/Language/locallang.xlf:widgets.recentContent.dateFormat')}" date="{element.tstamp}" /></span>
+        </div>
+        <div class="u-space-top">
+            <f:if condition="{element.isEditable}">
+                <be:link.editRecord class="btn btn-default btn-sm" uid="{element.uid}" table="tt_content" returnUrl="{f:be.uri(route: 'dashboard')}">
+                    <core:icon identifier="actions-open" size="small" />&nbsp;<f:translate key="LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:labels.edit" />
+                </be:link.editRecord>
+            </f:if>
+            <a class="btn btn-default btn-sm" href="{element.pageModuleUrl}">
+                <core:icon identifier="actions-document-view" size="small" />&nbsp;<f:translate key="LLL:EXT:si_recent_content_widget/Resources/Private/Language/locallang.xlf:widgets.recentContent.showPageBackend" />
+            </a>
+        </div>
+    </f:spaceless>
+</div>
+</html>
