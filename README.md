@@ -29,7 +29,7 @@ This extension was originally developed by [Epixskill](https://github.com/Epixsk
 as `epixskill/recent-content-widget` (extension key `recent_content_widget`).
 Many thanks to Epixskill for creating it.
 
-As the original extension is no longer maintained, it is continued by Siva
+As the original extension is not updated for TYPO3 v13/v14, it is continued by Siva
 as `woit/si-recent-content-widget` (extension key `si_recent_content_widget`).
 
 ## License
